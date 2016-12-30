@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="component">
+	<name>IFM</name>
+	<author>Scott LePage</author>
+	<version>1.0.2</version>
+	<description>
+		Uses the answers to a series of questions to find the right product for the customer.
+	</description>
+	<files>
+		<filename component="com_ifm">ifm.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>css/index.html</filename>
+		<filename>css/ifm.css</filename>
+		<filename>helpers/index.html</filename>
+		<filename>helpers/helper.phhp</filename>
+		<filename>models/index.html</filename>
+		<filename>models/ifm.php</filename>
+		<filename>views/index.html</filename>
+		<filename>views/ifm/index.html</filename>
+		<filename>views/ifm/view.html.php</filename>
+		<filename>views/ifm/tmpl/index.html</filename>
+		<filename>views/ifm/tmpl/default.php</filename>
+		<filename>views/ifm/tmpl/default_questions.php</filename>
+		<filename>views/ifm/tmpl/default_prodlist.php</filename>
+		<filename>views/ifm/tmpl/default_userinfo.php</filename>
+		<filename>views/ifm/tmpl/default_mailsent.php</filename>
+		<filename>views/ifm/tmpl/send_mail.php</filename>
+	</files>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<administration>
+		<menu>Interactive Filtering Module</menu>
+		<files>
+			<filename component="admin.ifm">admin.ifm.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+		</files>
+	</administration>
+</install>
